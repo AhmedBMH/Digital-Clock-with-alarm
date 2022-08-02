@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital-Clock-VER.2</title>
+<meta charset="utf-8">
+<meta name="description" content="im here to help in time"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="Digital-Clock">
+        <div class="time">
+            <span class="hours">00</span>
+            <span class="dots">:</span>
+            <span class="minutes">00</span>
+            <div class="right-sclasse">
+                <span class="periods">AM/PM</span>
+                <span class="seconds">00</span>
+            </div>
+        </div>
+        <div class="clender">
+            <span class="month-name">MONTH</span>,
+            <span class="day-name">DAY</span>
+            <span class="day-number">00</span>
+            <span class="year">0000</span>
+        </div>
+
+        <section class="container">
+        <div class="alarms"></div>
+        <input class="idk" onchange="setAlarmTime(this.value)" name="alertTime" type="datetime-local">
+        <div class="controls">
+          <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+          <button onclick="clearAlarm()" class="button clear-alarm">Clear alarm</button>
+          </section>
+          
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>

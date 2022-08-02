@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2e2e44;
+    
+}
+.Digital-Clock{
+    position: relative;
+    color: white;
+    background: #2d2f41;
+    width: 425px;
+    padding: 20px 45px;
+    box-shadow: 0 5px 25px rgba(14, 21, 37);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Digital-Clock:before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg #24ff6d #2f93f1 #ff5e9a);
+    background-size: 200% 200%;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    z-index: -1;filter: blur(40px);
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hours, .dots, .minutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 125px;
+}
+.hours, .minutes{
+    font-size: 6.5em;
+    width: 125;
+}
+.dots{
+    font-size: 5em;
+    color: #929292;
+}
+.hours{
+    background:  -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.minutes{
+    background:  -webkit-linear-gradient(90deg, #ff5e9a, #ffb960);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.right-side{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    font: bolder;
+}
+
+.periods, .seconds{
+    font-size: 1.2em;
+    font-weight: 500px;
+    
+}
+.periods{
+    transform: translateY(-25px);
+    background: -webkit-linear-gradient(90deg, #f7b63f, #faf879);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.seconds{
+    transform: translateY(15px);
+    background: -webkit-linear-gradient(90deg, #24ff6d, #2f93f1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.clender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    background: -webkit-linear-gradient(90deg, #ae4af6, #ff98d1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.day-name, .day-number, .year{
+    margin-left: 8.5px;
+}
+
+.controls {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.set-alarm, .clear-alarm {
+    margin: 0 5px;
+    background-color: rgba(14, 21, 37);
+    color: #ae4af6;
+    border: none;
+    padding: 4px 8px;
+    margin-top: 5px;
+    border-radius: 6.5px;
+    position: relative;
+}
+button:hover {
+    cursor: pointer;
+    color: #f7b63f;
+    background-color: transparent;
+    transition: all 1s;
+    border: solid rgba(255,255,255,0.3) 1px;
+}
+.idk{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
